@@ -1,15 +1,3 @@
-/**
- * DeepSeek Harness · Windows 原生 Toast 提醒
- *
- * 在「需要用户决策」「任务结束」「余额不足」「登录失效」「任务出错」这些
- * 需要用户观察或决定的时候，用 Windows 原生 Toast（屏幕右下角通知）提醒用户。
- *
- * Toast 的程序名固定为 DeepSeek Harness，正文是需要报告给用户的信息。
- * 实现方式：通过当前 Windows 会话的 PowerShell 调用 WinRT
- * Windows.UI.Notifications，并使用 DeepSeek Harness 已注册的 AppUserModelID
- * （开始菜单快捷方式 com.deepseek.dsh），因此通知的发送者就是 DeepSeek Harness。
- */
-
 import { spawn } from 'node:child_process'
 import { appendFileSync, mkdirSync, statSync, unlinkSync } from 'node:fs'
 import { dirname, join } from 'node:path'
