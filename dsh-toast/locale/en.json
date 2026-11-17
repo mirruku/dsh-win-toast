@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Windows Toast Alerts",
+    "description": "Shows a native Windows toast in the bottom-right corner when DeepSeek Harness needs your decision, finishes a task, runs out of balance, loses its sign-in, or fails a task."
+  }
+}

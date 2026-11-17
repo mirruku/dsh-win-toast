@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Windows toast alert">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#1f6feb"/>
+  <path d="M32 13c-7.15 0-12.95 5.8-12.95 12.95v10.4l-3.9 5.85c-.86 1.29.06 3 1.61 3h30.48c1.55 0 2.47-1.71 1.61-3l-3.9-5.85v-10.4C45 18.8 39.2 13 32 13z" fill="#ffffff"/>
+  <path d="M26.2 48.8a5.8 5.8 0 0 0 11.6 0z" fill="#ffffff"/>
+  <circle cx="45.5" cy="18.5" r="6" fill="#ff5a5f" stroke="#ffffff" stroke-width="2.2"/>
+</svg>

@@ -1,0 +1,25 @@
+# DeepSeek Harness · Windows 原生 Toast 提醒
+#
+# 在需要你决策（授权确认 / 结构化提问）、任务结束、余额不足、登录失效、
+# 任务出错时，在屏幕右下角弹出 Windows 原生通知；发送者显示为 DeepSeek Harness。
+#
+# 可调项（写在 config 下，未写的取默认值）：
+#   appId: 'com.deepseek.dsh'  通知发送者身份，即开始菜单快捷方式里的 AppUserModelID
+#   title: 'DeepSeek Harness'  Toast 第一行显示的程序名
+#   language: auto             auto | zh | en
+#   sound: true                是否播放提示音
+#   persistentDecisions: true  决策类通知常驻，直到你处理
+#   notifyApproval / notifyQuestion / notifyTurnEnd / notifyError /
+#   notifyBalance / notifyAccount: true   各场景开关
+#   notifySubagents: false     子代理的完成/出错是否也提醒
+#   bodyLimit: 220             正文截断长度
+#   dedupeWindowMs: 4000       同一条消息的最小重复间隔
+#   powershell: ''             自定义 powershell.exe 路径
+#   logFile: ''                诊断日志路径，空字符串表示默认位置
+- insert:
+    - id: dsh-toast
+      name: '@local/dsh-toast'
+      config:
+        language: auto
+        sound: true
+        persistentDecisions: true
